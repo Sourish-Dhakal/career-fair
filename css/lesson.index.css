@@ -2,6 +2,46 @@ body {
     background-color:rgb(100,100,100);
     margin:0px;
 }
+#index_Navigation_Bar {
+    position:fixed;
+    top:0px;
+    text-align:center;
+    z-index:1;
+    background-color:yellow;
+    padding:0px;
+    font-family:'Merriweather',serif;
+}
+#index_Navigation_Bar_Button {
+    width:260px;
+    height:10px;
+    padding:10px;
+}
+#index_Navigation_Bar_Button:hover {
+    background-color:Black;
+    color:white;
+}
+#index_Navigation_Bar_Content ul {
+    list-style:none;
+    width:fit-content;
+}
+#index_Navigation_Bar_Content ul li a {
+    color:black;
+    text-decoration:none;
+}
+#index_Navigation_Bar_Content ul li {
+    float:left;
+    padding:20px;
+    margin:0px;
+    font-size:20px;
+    width:100px;
+    text-align:center;
+}
+#index_Navigation_Bar_Content ul li:hover {
+    background-color:black;
+}
+#index_Navigation_Bar_Content ul li:hover a {
+    color:White;
+}
 :root {
     --image-height:calc(30vh - 80px);
 }
