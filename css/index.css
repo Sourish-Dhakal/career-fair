@@ -1,0 +1,232 @@
+/*General Styles*/
+body {
+    margin:0px;
+    overflow-x:hidden;
+    /*Fonts
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', serif;
+    */
+}
+h1 {
+    margin:0px;
+}
+/*Index Styles*/
+/*Navigation Bar*/
+#index_Navigation_Bar {
+    position:fixed;
+    top:0px;
+    text-align:center;
+    z-index:1;
+    background-color:yellow;
+    padding:0px;
+    font-family:'Merriweather',serif;
+}
+#index_Navigation_Bar_Button {
+    width:260px;
+    height:10px;
+    padding:10px;
+}
+#index_Navigation_Bar_Button:hover {
+    background-color:Black;
+    color:white;
+}
+#index_Navigation_Bar_Content ul {
+    list-style:none;
+    width:fit-content;
+}
+#index_Navigation_Bar_Content ul li a {
+    color:black;
+    text-decoration:none;
+}
+#index_Navigation_Bar_Content ul li {
+    float:left;
+    padding:20px;
+    margin:0px;
+    font-size:20px;
+    width:100px;
+    text-align:center;
+}
+#index_Navigation_Bar_Content ul li:hover {
+    background-color:black;
+}
+#index_Navigation_Bar_Content ul li:hover a {
+    color:White;
+}
+/*Header*/
+#index_Header {
+    width:100vw;
+    height:100vh;
+    background-image:url("https://www.hp.com/us-en/shop/app/assets/images/uploads/prod/5%20Best%20Coding%20Programs%20for%20Aspiring%20Programmers1650304687858345.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+}
+#index_Header_Title {
+    color:white;
+    background-color:rgba(0,0,0,0.75);
+    border:10px solid black;
+    width:400px;
+    position:absolute;
+    top:200px;
+    left:200px;
+    padding:20px;
+}
+#index_Header_Title_Title {
+    font-size:75px;
+    font-family:'Merriweather', serif;
+}
+#index_Header_Title_Paragraph {
+    font-size:25px;
+    font-family:'Lato', sans-serif;
+}
+/*Information*/
+#index_Section_1 {
+    border:10px solid black;
+    border-style:solid none none none;
+    width:100vw;
+    background-color:rgb(30,30,30);
+    padding-top:50px;
+    padding-bottom:50px;
+}
+#index_Section_1_Info_Title {
+    background-color:white;
+    border:10px solid black;
+    border-style:solid none solid none;
+    text-align:Center;
+    padding:30px;
+    font-size:50px;
+    font-family:'Merriweather',serif;
+}
+/*Variant 1: Left*/
+.index_Section_1_Info_Variant_1 {
+    background-color:rgb(0,0,0);
+    border:5px solid rgb(200,200,200);
+    width:75vw;
+    margin-left:0px;
+    border-style:solid solid solid none;
+    border-radius:0px 50px 50px 0px;
+    padding:20px;
+    padding-right:0px;
+    height:460px;
+    display:flex;
+    margin-top:10px;
+    margin-bottom:30px;
+}
+.index_Section_1_Info_Variant_1_Title {
+    color:white;
+    border:3px solid white;
+    border-style:none none solid none;
+    font-size:30px;
+    font-family: 'Merriweather', serif;
+    width:fit-content;
+}
+.index_Section_1_Info_Variant_1_Section {
+    float:left;
+}
+.index_Section_1_Info_Variant_1_Section_Paragraph{
+    color:White;
+    width:40vw;
+    font-size:20px;
+    font-family: 'Lato', sans-serif;
+}
+.index_Section_1_Info_Variant_1_Section_Image {
+    border-radius:0px 50px 50px 0px;
+    height:495px;
+    margin-top:-20px;
+    width:36vw;
+    border:5px solid rgb(200,200,200);
+}
+@media (prefers-reduced-motion: no-preference) {
+    .left-animation {
+      animation-name: leftAnimation;
+      animation-duration: 1s;
+      animation-iteration-count: 1;
+    }
+    .right-animation {
+        animation-name: rightAnimation;
+        animation-duration: 1s;
+        animation-iteration-count: 1; 
+    }
+  }
+@keyframes leftAnimation {
+	0% {
+		transform: translate(-300px,0px);
+	}
+	100% {
+		transform: translate(0px,0px);
+	}
+}
+@keyframes rightAnimation {
+    0% {
+        transform: translate(300px, 0px);
+    } 100% {
+        transform: translate(0px, 0px);
+    }
+}
+/*Variant 2: Right*/
+.index_Section_1_Info_Variant_2 {
+    background-color:rgb(0,0,0);
+    border:5px solid rgb(200,200,200);
+    width:75vw;
+    margin-left:22.5vw;
+    border-style:solid none solid solid;
+    border-radius:50px 0px 0px 50px;
+    padding:20px;
+    padding-left:0px;
+    height:460px;
+    display:flex;
+    justify-content:end;
+    margin-top:10px;
+    margin-bottom:30px;
+}
+.index_Section_1_Info_Variant_2_Section {
+    margin-left:10px;
+}
+.index_Section_1_Info_Variant_2_Title {
+    color:white;
+    border:3px solid white;
+    border-style:none none solid none;
+    font-size:30px;
+    font-family: 'Merriweather', serif;
+    width:fit-content;
+}
+.index_Section_1_Info_Variant_2_Section_Paragraph{
+    color:White;
+    width:40vw;
+    font-size:20px;
+    font-family: 'Lato', sans-serif;
+}
+.index_Section_1_Info_Variant_2_Section_Image {
+    border-radius:50px 0px 0px 50px;
+    height:495px;
+    margin-top:-20px;
+    width:37.5vw;
+    float:left;
+    border:5px solid rgb(200,200,200);
+}
+/*Sections*/
+.index_Section_1_Info_Section {
+    width:100vw;
+    height:50vh;
+    padding-top:50vh;
+    background-size:cover;
+    background-attachment:fixed;
+    border:10px solid black;
+    border-style:solid none solid none;
+}
+.index_Section_1_Info_Title {
+    color:white;
+    background-color:rgba(0,0,0,0.75);
+    border:5px solid black;
+    width:fit-content;
+    margin-left:200px;
+    padding:10px;
+}
+.index_Section_1_Info_Title_Title {
+    font-size:75px;
+    font-family:'Merriweather', serif;
+}
+.index_Section_1_Info_Title_Paragraph {
+    font-size:25px;
+    font-family:'Lato', sans-serif;
+}

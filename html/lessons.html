@@ -1,0 +1,62 @@
+<DOCTYPE html>
+<html>
+<head>
+    <link href="../css/lessons.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b6d7aac99c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Lato&family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body onload="Loaded()">
+    <div id="lessons-heading">
+        <span id="lessons-heading-back"><a href="lesson.index.html"><--- Back</a></span>
+        <h1 id="lessons-heading-title"> //Insert Lesson Name</h1>
+        <div style="display:flex;">
+        <p id="lessons-heading-info">//Insert Lesson Info and Instructions</p>
+        <img src="" alt="//Insert Image" id="lessons-heading-image" onclick="OpenModal2(this.src)">
+        </div>
+    </div>
+    <div id="lessons-code-editor">
+        <div>
+            <div id="lessons-code_editor-html">
+                <h1 id="lessons-code-editor-html-title" onclick="lessonsOpen('lessons-code-editor-html-title-content',this,'HTML')"><i class="fa-sharp fa-solid fa-angle-up"></i> &nbsp; &nbsp; HTML &nbsp; &nbsp; <i class="fa-sharp fa-solid fa-angle-up"></i></h1>
+                <div id="lessons-code-editor-html-title-content" style="display:none;">
+                    <form>
+                        <textarea style="width:50vw;height:28vw;overflow:scroll;" onchange="HTMLChange(this.value)"></textarea>
+                    </form>
+                </div>
+            </div>
+            <div id="lessons-code_editor-html">
+                <h1 id="lessons-code-editor-html-title" onclick="lessonsOpen('lessons-code-editor-css-title-content',this,'CSS')"><i class="fa-sharp fa-solid fa-angle-up"></i> &nbsp; &nbsp; CSS &nbsp; &nbsp; <i class="fa-sharp fa-solid fa-angle-up"></i></h1>
+                <div id="lessons-code-editor-css-title-content" style="display:none;">
+                    <form>
+                        <textarea style="width:50vw;height:28vw;overflow:scroll;" onchange="CSSChange(this.value)"></textarea>
+                    </form>
+                </div>
+            </div>
+            <div id="lessons-code_editor-html">
+                <h1 id="lessons-code-editor-html-title" onclick="lessonsOpen('lessons-code-editor-js-title-content',this,'JAVASCRIPT')"><i class="fa-sharp fa-solid fa-angle-up"></i> &nbsp; &nbsp; JAVASCRIPT &nbsp; &nbsp; <i class="fa-sharp fa-solid fa-angle-up"></i></h1>
+                <div id="lessons-code-editor-js-title-content" style="display:none;">
+                    <form>
+                        <textarea style="width:50vw;height:28vw;overflow:scroll;" onchange="JavascriptChange(this.value)"></textarea>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="run_background">
+                <div id="run_btn" onclick="SetThing()">Run</div>
+            </div>
+            <iframe src="lessons2.html" id="viewer"></iframe>
+        </div>
+    </div>
+    <div style="width:100vw;height:100vh;background-color:black;display:none;position:fixed;top:0px;left:0px;" id="modal">
+        <h1 style="color:white;"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwixu5OL1pX-AhWFj4kEHSYXB98QtwJ6BAgLEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D3LOhscwMltU&usg=AOvVaw3Ow3ix3KJMkyJlvTqstq49">CLICK ME</a> ALSO SEE ONE OF THE PEOPLE WHO ARE RUNNING THIS.</h1>
+    </div>
+    <div style="width:100vw;height:100vh;background-color:black;display:none;position:fixed;top:0px;left:0px;" id="modal2" onclick="CloseModal2(this)">
+        <img id="modal2img" height="100%" style="max-width:100%;">
+    </div>
+    <script src="../js/dbLessons.js"></script>
+    <script src="../js/lessons.js"></script>
+</body>
+</html>
