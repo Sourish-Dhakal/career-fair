@@ -1,3 +1,13 @@
+function indexNavigationBarButton() {
+    if (document.getElementById("index_Navigation_Bar_Content").style.display=="none"){
+        document.getElementById("index_Navigation_Bar_Content").style.display="block";
+        document.getElementById("index_Navigation_Bar_Button").innerHTML="<i class='fa-sharp fa-solid fa-angle-up'></i>";
+        document.getElementById("index_Navigation_Bar_Button").style.marginTop="75px";
+    } else {document.getElementById("index_Navigation_Bar_Content").style.display="none";
+        document.getElementById("index_Navigation_Bar_Button").innerHTML="<i class='fa-sharp fa-solid fa-angle-down'></i>";
+        document.getElementById("index_Navigation_Bar_Button").style.marginTop="0px";
+    }
+}
 function CreateAHeading(text) {
     let h1 = document.createElement('h1');
     h1.innerHTML=text;
